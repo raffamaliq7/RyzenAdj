@@ -75,6 +75,7 @@ static const char *family_name(enum ryzen_family fam)
 		case FAM_VANGOGH: return "Vangogh";
 		case FAM_REMBRANDT: return "Rembrandt";
 		case FAM_PHOENIX: return "Phoenix Point";
+		case FAM_MENDOCINO: return "Mendocino";
 		case FAM_HAWKPOINT: return "Hawk Point";
 		case FAM_DRAGONRANGE: return "Dragon Range";
 		case FAM_KRACKANPOINT: return "Krackan Point";
