@@ -1,6 +1,5 @@
 // SPDX-License-Identifier: LGPL
 /* Copyright (C) 2020 Jiaxun Yang <jiaxun.yang@flygoat.com> */
-/* RyzenAdj CPU ID stuff */
 
 #include "ryzenadj.h"
 
