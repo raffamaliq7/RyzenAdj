@@ -123,6 +123,7 @@ static int request_table_ver_and_size(ryzen_access ry) {
 		case FAM_RENOIR:
 		case FAM_LUCIENNE:
 		case FAM_CEZANNE:
+		case FAM_MENDOCINO:
 		case FAM_REMBRANDT:
 		case FAM_PHOENIX:
 		case FAM_HAWKPOINT:
@@ -203,6 +204,7 @@ static int request_table_addr(ryzen_access ry)
 	case FAM_RENOIR:
 	case FAM_LUCIENNE:
 	case FAM_CEZANNE:
+	case FAM_MENDOCINO:
 	case FAM_REMBRANDT:
 	case FAM_PHOENIX:
 	case FAM_HAWKPOINT:
@@ -258,6 +260,7 @@ static int request_transfer_table(ryzen_access ry)
 	case FAM_RENOIR:
 	case FAM_LUCIENNE:
 	case FAM_CEZANNE:
+	case FAM_MENDOCINO:
 	case FAM_REMBRANDT:
 	case FAM_PHOENIX:
 	case FAM_HAWKPOINT:
