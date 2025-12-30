@@ -14,11 +14,15 @@
 
 
 EXP ryzen_access CALL init_ryzenadj() {
-	const enum ryzen_family family = cpuid_get_family();
+	// Remove 'const' so we can change it
+	enum ryzen_family family = cpuid_get_family();
 	ryzen_access ry;
 
-	if (family == FAM_UNKNOWN)
-		return NULL;
+	// Force Mendocino if Unknown
+	if (family == FAM_UNKNOWN) {
+		printf("Unknown Family: Forcing FAM_MENDOCINO\n");
+		family = FAM_MENDOCINO;
+	}
 
 	ry = (ryzen_access)malloc(sizeof(*ry));
 
