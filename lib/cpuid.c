@@ -40,7 +40,7 @@ static enum ryzen_family cpuid_load_family()
 
     if (strncmp(vendor, CPUID_VENDOR_AMD, strlen(CPUID_VENDOR_AMD))) {
         printf("Not AMD processor, must be kidding\n");
-        return FAM_UNKNOWN;
+        return FAM_MENDOCINO;
     }
 
     getcpuid(regs, 1);
@@ -113,7 +113,7 @@ static enum ryzen_family cpuid_load_family()
     }
 
     printf("Only Ryzen Mobile Series are supported\n");
-    return FAM_UNKNOWN;
+    return FAM_MENDOCINO;
 }
 
 /*
